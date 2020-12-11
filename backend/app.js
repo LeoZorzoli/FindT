@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 
 const userRouter = require('./controllers/user');
 const loginRouter = require('./controllers/login');
+const registerRouter = require('./controllers/register');
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use(middleware.requestLogger);
 
 app.use('/api/users', userRouter);
 app.use('/api/login', loginRouter);
+app.use('/api/register', registerRouter);
 
 app.use(middleware.errorHandler);
 
