@@ -28,9 +28,13 @@ const RegisterPage = () => {
             country: country.value,
             password: password1.value
         }
-    
-        dispatch(register(userToRegister))
-        history.push('/login')
+
+        if (password1.value === password2.value){
+            if(username.value && firstName.value && lastName.value && email.value && country.value && password1.value){
+                dispatch(register(userToRegister))
+                history.push('/login')
+            }
+        }
     }
     
     return (

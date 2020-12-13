@@ -20,7 +20,7 @@ const LoginPage = () => {
             password: password.value
         }
 
-        dispatch(login(user))
+        await dispatch(login(user))
         history.push('/')
     }
 

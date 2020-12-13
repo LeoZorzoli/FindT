@@ -18,16 +18,22 @@ const NavComponent = () => {
 
     const userLogged = () => {
         return(
-            <Nav className="ml-auto">
-                <Nav.Link className="nav-link link-style" href="#" onClick={handleLogout}>Logout</Nav.Link>
+            <>
+            <Nav className="mr-auto">
+                <NavLink className="nav-link" to="/newproject">New project</NavLink>
+                <NavLink className="nav-link" to="/projects">List of Projects</NavLink>
             </Nav>
+            <Nav className="ml-auto">
+                <Nav.Link className="nav-link" href="#" onClick={handleLogout}>Logout</Nav.Link>
+            </Nav>
+            </>
         )
     }
     const userAnonymous = () => {
         return(
             <Nav className="ml-auto">
-                <NavLink className="nav-link link-style" to="/login">Login</NavLink>
-                <NavLink className="nav-link link-style" to="/register">Register</NavLink>
+                <NavLink className="nav-link" to="/login">Login</NavLink>
+                <NavLink className="nav-link" to="/register">Register</NavLink>
             </Nav>
         )
     }
@@ -37,9 +43,7 @@ const NavComponent = () => {
             <Navbar.Brand><NavLink to="/">React-Bootstrap</NavLink></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    {user ? userLogged() : userAnonymous()}
-                </Nav>
+                {user ? userLogged() : userAnonymous()}
             </Navbar.Collapse>
         </Navbar>
     )
