@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const Project = ({ project }) => {
-    console.log(project)
     return (
         <div>
             <p>Title: {project.name}</p>

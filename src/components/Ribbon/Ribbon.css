@@ -1,0 +1,61 @@
+.logo{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.ribbon {
+    width: 48%;
+    position: relative;
+    float: left;
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ribbon:nth-child(even) {
+    margin-right: 4%;
+}
+
+.ribbon2 {
+    width: 160px;
+    height: 180px;
+    padding: 10px 0;
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    background: #3b3b3b;
+}
+
+.ribbon2:before {
+    height: 0;
+    width: 0;
+    right: -9.8px;
+    top: 0.1px;
+    border-bottom: 16px solid #cccccc;
+    border-right: 10px solid transparent;
+}
+   
+.ribbon2:before, .ribbon2:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon2:after {
+    height: 0;
+    width: 160px;
+    bottom: -40.5px;
+    left: 0;
+    border-top: 20px solid #cccccc;
+    border-left: 80px solid #cccccc;
+    border-right: 80px solid #cccccc;
+    border-bottom: 40px solid transparent;
+}
+
+@media (max-width: 1000px) {
+    .ribbon {
+        display: none;
+    }
+}
+

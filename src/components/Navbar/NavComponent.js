@@ -3,6 +3,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from '../../reducers/loginReducer'
+import Ribbon from '../Ribbon/Ribbon';
+import './NavComponent.css';
 
 const NavComponent = () => {
 
@@ -39,8 +41,8 @@ const NavComponent = () => {
     }
 
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand><NavLink to="/">React-Bootstrap</NavLink></Navbar.Brand>
+        <Navbar className="navbar" bg="light" expand="lg">
+            <Ribbon />
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 {user ? userLogged() : userAnonymous()}

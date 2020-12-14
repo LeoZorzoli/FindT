@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+.text1{
+    margin-left: 220px;
+    font-size: 90px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+}
+
+.principal-text{
+    margin-top: 260px;
+}
+
+.principal-text-right{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.text2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 46px;
+    color: #5271FF;
+    margin-bottom: 0px;
+}
+
+.text3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    .text1{
+        margin-top: -60px;
+        margin-left: 0px;
+        font-size: 60px;
+    }
+
+    .text2{
+        font-size: 32px;
+    }
+
+    .principal-text-right{
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .text3{
+        font-size: 24px;
+    }
+}
+
+.half_background {
+    background: linear-gradient(to top, #5271FF 30%, transparent 20%);
+}

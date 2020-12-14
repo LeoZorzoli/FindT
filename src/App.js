@@ -8,8 +8,10 @@ import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
+import NewProjectPage from './pages/NewProjectPage/NewProjectPage';
 
-import { getProjects } from './reducers/projectsReducer'
+import { getProjects } from './reducers/projectsReducer';
+import projectService  from './services/projects';
 
 function App() {
 
@@ -19,7 +21,16 @@ function App() {
 
   useEffect(() => {
     dispatch(getProjects())
+
+    const loggedInUserJSON = JSON.parse(
+      window.localStorage.getItem('loggedUser'),
+    )
+    if (loggedInUserJSON) {
+      const user = loggedInUserJSON
+      projectService.setToken(user?.token)
+    }
   }, [dispatch])
+
 
   return (
     <div>
@@ -29,6 +40,9 @@ function App() {
           <Route exact path="/" component={() => <HomePage />} />
           <Route path="/projects" >
             {user ? <ProjectsPage /> : <Redirect to="/login" />}
+          </Route>
+          <Route path="/newproject" >
+            {user ? <NewProjectPage /> : <Redirect to="/login" />}
           </Route>
           <Route path="/login" >
             {!user ? <LoginPage /> : <Redirect to="/" />}
