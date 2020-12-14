@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import NewProjectPage from './pages/NewProjectPage/NewProjectPage';
+import ChatPage from './pages/ChatPage/ChatPage';
 
 import { getProjects } from './reducers/projectsReducer';
 import projectService  from './services/projects';
@@ -38,6 +39,9 @@ function App() {
       <NavComponent />
         <Switch>
           <Route exact path="/" component={() => <HomePage />} />
+          <Route path="/chat" >
+            {user ? <ChatPage /> : <Redirect to="/login" />}
+          </Route>
           <Route path="/projects" >
             {user ? <ProjectsPage /> : <Redirect to="/login" />}
           </Route>

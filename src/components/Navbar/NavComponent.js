@@ -24,6 +24,7 @@ const NavComponent = () => {
             <Nav className="mr-auto">
                 <NavLink className="nav-link" to="/newproject">New project</NavLink>
                 <NavLink className="nav-link" to="/projects">List of Projects</NavLink>
+                <NavLink className="nav-link" to="/chat">Chat</NavLink>
             </Nav>
             <Nav className="ml-auto">
                 <Nav.Link className="nav-link" href="#" onClick={handleLogout}>Logout</Nav.Link>
