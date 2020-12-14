@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { register } from '../../reducers/registerReducer';
 
+import './RegisterPage.css'
+
 const RegisterPage = () => {
     const username = useField('text')
     const firstName = useField('text')
@@ -38,8 +40,8 @@ const RegisterPage = () => {
     }
     
     return (
-        <Container>
-            <Form onSubmit={handleRegister} className="registerform">
+        <Container className="registerForm">
+            <Form onSubmit={handleRegister}>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Username</Form.Label>
                     <Form.Control {...username}/>

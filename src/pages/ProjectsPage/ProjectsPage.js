@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Container } from 'react-bootstrap'
 
 const Project = ({ project }) => {
     return (
@@ -16,9 +17,9 @@ const ProjectsPage = () => {
     const projects = useSelector(state => state.projects)
 
     return (
-        <div>
+        <Container>
             {projects.map(project => <Project key={project.id} project={project} /> )}
-        </div>
+        </Container>
     )
 }
 

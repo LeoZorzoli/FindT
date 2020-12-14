@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux'
 import { login } from '../../reducers/loginReducer'
 import { useHistory } from 'react-router-dom'
 
+import './LoginPage.css'
+
 const LoginPage = () => {
     const username = useField('text')
     const password = useField('password')
@@ -25,8 +27,8 @@ const LoginPage = () => {
     }
 
     return (
-        <Container>
-            <Form className="loginStyle" onSubmit={handleLogin} >
+        <Container className="loginForm">
+            <Form onSubmit={handleLogin} >
                 <Form.Group controlId="formUsername">
                     <Form.Label>Username</Form.Label>
                     <Form.Control placeholder="Username" {...username} />
