@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+.text1{
+    margin-left: 220px;
+    font-size: 90px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+}
+
+.principal-text{
+    margin-top: 260px;
+}
+
+.principal-text-right{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 46px;
+    color: #5271FF;
+    margin-bottom: 0px;
+}
+
+.text3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    .text1{
+        margin-top: -60px;
+        margin-left: 0px;
+        font-size: 60px;
+    }
+
+    .text2{
+        font-size: 32px;
+    }
+
+    .principal-text-right{
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .text3{
+        font-size: 24px;
+    }
+}
+
+.half_background {
+    background: linear-gradient(to top, #5271FF 30%, transparent 20%);
+}
+
+.help-button {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    background-color: #5271FF;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.projects-section{
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #f2f2f2;
+    margin-top: 280px;
+    padding: 40px;
+}
+
+.blocks-projects{
+    padding: 34px;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+}
+
+.line-right{
+    border-right: 1px solid #d6d6d6;
+}
+
+.line-left{
+    border-left: 1px solid #d6d6d6;
+}
+
+.title-projects-section{
+    border-left: 3px solid #5271FF !important;
+    padding-left: 6px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+.how-work-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.how-work-title{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 60px;
+}
+
+.how-work-part{
+    text-align: center;
+}
+
+.image-how-work{
+    width: 120px;
+}
+
+.subtitle-how-work{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section{
+    border-top: 1px solid #d6d6d6;
+    background-color: #5271FF;
+}
+
+.info-footer{
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.footer-links{
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+}
+
+.company-footer{
+    margin-top: 20px;
+}
