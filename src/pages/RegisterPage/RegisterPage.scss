@@ -4,5 +4,52 @@
     margin-top: 100px;
     width: 600px;
     padding: 40px;
-    border: 2px solid $principal-color;
+    border: 1px solid $principal-color;
+    background-color: #f5f5f5;
+}
+
+.button-register{
+    width: 100%;
+    background-color: $principal-color;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.button-register:hover{
+    background-color: $principal-color;
+    border: 1px solid $principal-color;
+}
+
+.button-register2{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $principal-color;
+    background-color: transparent;
+    color: $principal-color;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.button-register2:hover{
+    background-color: $principal-color;
+    color: white;
+}
+
+.register-title{
+    font-size: 28px;
+}
+
+.register-label{
+    margin: 2px;
+}
+
+.input-register{
+    background-color: #edf1ff;
+}
+
+.input-register:focus{
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid $principal-color;
 }

@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom'
 
 const Ribbon = () => {
     return (
-        <NavLink to="/">
-            <div className="ribbon">
+        <NavLink fluid to="/">
+            <div className="ribbon fluid">
                 <span className="ribbon3">
                     <span className="ribbon2">
                         <Image className="logo" fluid src={logo} />

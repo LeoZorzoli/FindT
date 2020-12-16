@@ -3,12 +3,12 @@ import { Container, Form, Button } from 'react-bootstrap';
 import { useField } from '../../hooks/index'
 import { useDispatch } from 'react-redux'
 import { login } from '../../reducers/loginReducer'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 import './LoginPage.scss'
 
 const LoginPage = () => {
-    const username = useField('text')
+    const email = useField('email')
     const password = useField('password')
 
     const dispatch = useDispatch()
@@ -18,7 +18,7 @@ const LoginPage = () => {
         event.preventDefault()
 
         const user = {
-            username: username.value,
+            email: email.value,
             password: password.value
         }
 
@@ -27,17 +27,19 @@ const LoginPage = () => {
     }
 
     return (
-        <Container className="loginForm">
+        <Container className="loginForm rounded">
             <Form onSubmit={handleLogin} >
+                <p className="login-title">Sign in</p>
                 <Form.Group controlId="formUsername">
-                    <Form.Label>Username</Form.Label>
-                    <Form.Control placeholder="Username" {...username} />
+                    <Form.Label className="login-label"><strong>Email</strong></Form.Label>
+                    <Form.Control className="input-login" {...email} />
                 </Form.Group>
                 <Form.Group controlId="formPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control placeholder="Password" {...password} />
+                    <Form.Label className="login-label"><strong>Password</strong></Form.Label>
+                    <Form.Control className="input-login" {...password} />
                 </Form.Group>
-                <Button variant="outline-primary" id='login-button' type="submit">Login</Button>
+                <Button className="button-login" type="submit">Login</Button>
+                <Link to="/register"><Button className="button-login2" type="submit">Create an account</Button></Link>
             </Form>
         </Container>
     )

@@ -20,16 +20,16 @@ const NavComponent = () => {
 
     const userLogged = () => {
         return(
-            <>
+            <Container>
             <Nav className="mr-auto">
                 <NavLink className="nav-link" to="/newproject">New project</NavLink>
                 <NavLink className="nav-link" to="/projects">List of Projects</NavLink>
                 <NavLink className="nav-link" to="/chat">Chat</NavLink>
             </Nav>
             <Nav className="ml-auto">
-                <Nav.Link className="nav-link" href="#" onClick={handleLogout}>Logout</Nav.Link>
+                <Nav.Link className="nav-link" onClick={handleLogout}>Logout</Nav.Link>
             </Nav>
-            </>
+            </Container>
         )
     }
     const userAnonymous = () => {
@@ -43,10 +43,11 @@ const NavComponent = () => {
 
     return (
         <Navbar className="navbar" bg="light" expand="lg">
-            <Ribbon />
+            
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
+                <NavLink className="nav-link" to="/">Home</NavLink>
                     {user ? userLogged() : userAnonymous()}
                 </Navbar.Collapse>
             </Container>
