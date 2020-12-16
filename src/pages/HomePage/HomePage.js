@@ -27,16 +27,16 @@ const HomePage = () => {
                     <Container className="blocks-projects">
                         <Row>
                             <Col xl={4} xs={12} className="line-right">
-                                <p className="title-projects-section">Small Projects</p>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p className="title-projects-section">Students</p>
+                                <p>You are a student and you are looking for people to work as a team.</p>
                             </Col>
                             <Col xl={4} xs={12}>
-                                <p className="title-projects-section">Large Projects</p>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p className="title-projects-section">Freelancers</p>
+                                <p>You are a freelancer and you need people to collaborate on your work.</p>
                             </Col>
                             <Col xl={4} xs={12} className="line-left">
-                                <p className="title-projects-section">Company projects</p>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p className="title-projects-section">Companies</p>
+                                <p>You are looking for employees to carry out both small and large-scale projects.</p>
                             </Col>
                         </Row>
                     </Container>
@@ -48,27 +48,27 @@ const HomePage = () => {
                         <Row>
                             <Col xl={3} className="how-work-part">
                                 <Image className="image-how-work" fluid src={profile} />
-                                <p className="subtitle-how-work">Small Projects</p>
+                                <p className="subtitle-how-work">Create your Profile</p>
                                 <span className="line-blue"></span>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p>Register on our website and complete your profile.</p>
                             </Col>
                             <Col xl={3} className="how-work-part">
                                 <Image className="image-how-work" fluid src={post} />
-                                <p className="subtitle-how-work">Large Projects</p>
+                                <p className="subtitle-how-work">Create your project</p>
                                 <span className="line-blue"></span>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p>Create a new project with your ideas and your expectations.</p>
                             </Col>
                             <Col xl={3} className="how-work-part">
                                 <Image className="image-how-work" fluid src={find} />
-                                <p className="subtitle-how-work">Company projects</p>
+                                <p className="subtitle-how-work">Find your team</p>
                                 <span className="line-blue"> </span>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p>Find people who fit into your team and want to collaborate on your project.</p>
                             </Col>
                             <Col xl={3} className="how-work-part">
                                 <Image className="image-how-work" fluid src={collaborate} />                                
-                                <p className="subtitle-how-work">Company projects</p>
+                                <p className="subtitle-how-work">Create</p>
                                 <span className="line-blue"> </span>
-                                <p>Find specialized experts and agencies for large projects.</p>
+                                <p>Carry out your ideas and projects with your new team.</p>
                             </Col>
                         </Row>
                 </Container>
@@ -76,7 +76,7 @@ const HomePage = () => {
             <Row>
                 <Container fluid className="footer-section">
                     <Container className="info-footer">
-                        <p className="footer-contact">Would you like to collaborate with us? Contact us</p>
+                        <p className="footer-contact">Would you like to collaborate with us? Contact</p>
                         <Row className="footer-links">
                             <Col xl={3} className="how-work-part">
                                 <p>Company</p>

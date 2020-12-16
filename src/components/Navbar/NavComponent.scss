@@ -1,5 +1,7 @@
+@import '../../utilities/variables';
+
 .navbar{
-    background-color: #5271FF !important;
+    background-color: $principal-color !important;
     border-bottom: 2px solid #e4e3e3;
 }
 

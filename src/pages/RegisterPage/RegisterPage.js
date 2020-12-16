@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { register } from '../../reducers/registerReducer';
 
-import './RegisterPage.css'
+import './RegisterPage.scss'
 
 const RegisterPage = () => {
     const username = useField('text')

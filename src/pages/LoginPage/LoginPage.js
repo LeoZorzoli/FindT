@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { login } from '../../reducers/loginReducer'
 import { useHistory } from 'react-router-dom'
 
-import './LoginPage.css'
+import './LoginPage.scss'
 
 const LoginPage = () => {
     const username = useField('text')

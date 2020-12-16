@@ -4,7 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from '../../reducers/loginReducer'
 import Ribbon from '../Ribbon/Ribbon';
-import './NavComponent.css';
+import './NavComponent.scss';
 
 const NavComponent = () => {
 

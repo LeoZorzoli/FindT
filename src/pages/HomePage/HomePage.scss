@@ -1,3 +1,5 @@
+@import '../../utilities/variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
 .text1{
@@ -19,7 +21,7 @@
 .text2{
     font-family: 'Roboto Mono', monospace;
     font-size: 46px;
-    color: #5271FF;
+    color: $principal-color;
     margin-bottom: 0px;
 }
 
@@ -50,14 +52,14 @@
 }
 
 .half_background {
-    background: linear-gradient(to top, #5271FF 30%, transparent 20%);
+    background: linear-gradient(to top, $principal-color 30%, transparent 20%);
 }
 
 .help-button {
     position: fixed;
     bottom: 40px;
     right: 60px;
-    background-color: #5271FF;
+    background-color: $principal-color;
     border: none;
     border-radius: 10px;
     font-size: 24px;
@@ -90,7 +92,7 @@
 }
 
 .title-projects-section{
-    border-left: 3px solid #5271FF !important;
+    border-left: 3px solid $principal-color !important;
     padding-left: 6px;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
@@ -123,8 +125,8 @@
 }
 
 .footer-section{
-    border-top: 1px solid #d6d6d6;
-    background-color: #5271FF;
+    border-top: 1px solid grey;
+    background-color: $principal-color;
 }
 
 .info-footer{
@@ -139,5 +141,5 @@
 }
 
 .company-footer{
-    margin-top: 20px;
+    margin-top: 10px;
 }
