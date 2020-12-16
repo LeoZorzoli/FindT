@@ -1,5 +1,5 @@
 import React from 'react';
-import './Ribbon.css'
+import './Ribbon.scss'
 import logo from '../../assets/logo.png'
 import { Image } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
